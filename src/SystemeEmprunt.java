@@ -37,7 +37,6 @@ private boolean nouveauClient() {
 
 	clients[nbClients] = new Client(nbClients, depart, arrivee);
 	nbClients++;
-	System.out.println(nbClients);
 	return true;
 
 }
@@ -57,6 +56,13 @@ SystemeEmprunt() {
 	for(j = 0;j<maxClients;j++){
 		nouveauClient();
 	}
+	
+	Camion camion = new Camion(sites);
+	camion.start();
+	
+
+	
+	
 	
 
     /* ... */
